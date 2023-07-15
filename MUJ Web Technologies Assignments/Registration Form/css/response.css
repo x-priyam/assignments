@@ -1,0 +1,21 @@
+hr {
+    border: none;
+    margin: 2em 0;
+    width: 20vw;
+    border-top: 0.5em dotted var(--background-color);
+}
+
+#response span {
+    color: var(--secondary-color);
+}
+
+#response .end-note {
+    font-style: italic;
+}
+
+@media all and (orientation:landscape) {
+    hr {
+        margin: 2em 1em;
+        width: 10vw;
+    }
+}

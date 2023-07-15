@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/sign-up.css">
+    <link rel="stylesheet" href="css/response.css">
+    <script defer src="js/form.js"></script>
+    <link rel="shortcut icon" href="https://api.iconify.design/noto-v1/pizza.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div id="body-wrapper">
+        <div id="sign-up">
+            <header>
+                <h1>Sign Up</h1>
+                <span>Fill in your details below to sign up to our newsletter</span>
+            </header>
+            <main>
+                <form action="#" method="post" novalidate>
+                    <fieldset id="personal-info">
+                        <legend>Your Info</legend>
+                        <div id="form-name">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" autocomplete="name">
+                            <span class="err"></span>
+                        </div>
+                        <div id="form-email">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" autocomplete="email">
+                            <span class="err"></span>
+                        </div>
+                        <div id="form-phone">
+                            <label for="phone">Phone:</label>
+                            <input type="tel" name="phone" id="phone" autocomplete="tel">
+                            <span class="err"></span>
+                        </div>
+                    </fieldset>
+                    <fieldset id="pref">
+                        <legend>Preferences</legend>
+                        <span>
+                            Choose the topics you're interested in:
+                        </span>
+                        <div id="check-wrapper">
+                            <div id="form-games">
+                                <label for="games">
+                                    <input type="checkbox" name="games" id="games">
+                                    Games
+                                </label>
+                            </div>
+                            <div id="form-sports">
+                                <label for="sports">
+                                    <input type="checkbox" name="sports" id="sports">
+                                    Sports
+                                </label>
+                            </div>
+                            <div id="form-music">
+                                <label for="music">
+                                    <input type="checkbox" name="music" id="music">
+                                    Music
+                                </label>
+                            </div>
+                        </div>
+                        <span class="err">&times; Select one of the options at minimum</span>
+                    </fieldset>
+                    <div>
+                        <input id="submit" type="submit" value="Submit">
+                    </div>
+                </form>
+            </main>
+        </div>
+        <div id="response">
+            <header>
+                <h1>Thank you</h1>
+            </header>
+            <hr>
+            <main>
+                <p>
+                    Hey <span id="response-name"></span>,
+                    <br>
+                    Thanks for signing up for our newsletter. You'll now get a special newsletter focussed on <span id="response-pref"></span> in your inbox at <span id="response-email"></span>. We'll also drop you a message on <span id="response-phone"></span> so you never miss out on your newsletter.
+                </p>
+                <p class="end-note">
+                    Sincerely,
+                    <br>
+                    Priyam
+                </p>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

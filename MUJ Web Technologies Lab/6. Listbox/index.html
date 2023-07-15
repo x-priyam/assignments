@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Listbox</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: rgb(167, 93, 93);
+            --secondary-color: rgb(211, 117, 107);
+            --accent-color: rgb(240, 153, 125);
+            --highlight-color: rgb(255, 195, 161);
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: var(--primary-color);
+            font-family: Rowdies, sans-serif;
+            color: white;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        * {
+            transition: all 0.5s ease-in;
+        }
+
+        button,
+        select {
+            background-color: var(--accent-color);
+            border: none;
+            padding: 0.5em 1em;
+            border-radius: 0.5em;
+            box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+            font-family: inherit;
+            color: inherit;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background-color: var(--highlight-color);
+            cursor: pointer;
+        }
+
+        h1 {
+            font-size: 4em;
+        }
+
+        #wrapper {
+            width: 80vw;
+            height: 70vh;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: var(--secondary-color);
+            border-radius: 3em;
+            box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.25);
+        }
+
+        .question {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .question>* {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .question>p {
+            flex: 2;
+            width: 70%;
+            font-size: 2em;
+        }
+
+        .question>div {
+            flex: 1;
+        }
+
+        hr {
+            width: 80%;
+            border: none;
+            border-top: 4px solid var(--highlight-color);
+            border-radius: 4px;
+        }
+
+        #ques2.hidden {
+            opacity: 0;
+        }
+
+        @media screen and (min-width: 768px) {
+            #wrapper {
+                flex-direction: row;
+            }
+
+            hr {
+                width: 0;
+                height: 80%;
+                border-top: none;
+                border-left: 4px solid var(--highlight-color);
+                margin: auto 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trip Planner</h1>
+    <div id="wrapper">
+        <div class="question" id="ques1">
+            <p>Press if you want to go on a trip!</p>
+            <div>
+                <button id="init">GO!</button>
+            </div>
+        </div>
+        <hr>
+        <div class="question hidden" id="ques2">
+            <p>Choose which city you want to go to</p>
+            <div>
+                <select name="city" id="choice"></select>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function populateList() {
+            let choice = document.querySelector("#choice");
+            cities = [
+                "Delhi",
+                "Jaipur",
+                "Shimla",
+                "Mumbai"
+            ];
+
+            for (let i = 0; i < cities.length; i++) {
+                choice.options[i] = new Option(cities[i], cities[i]);
+            }
+        }
+
+        let init = document.querySelector("#init");
+        init.addEventListener('click', () => {
+            let ques2 = document.querySelector("#ques2");
+            ques2.classList.remove("hidden");
+            populateList();
+        });
+    </script>
+</body>
+
+</html>

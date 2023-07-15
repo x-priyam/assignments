@@ -1,0 +1,4 @@
+-- drop database uni;
+-- drop table STUDENT;
+-- drop database company;
+-- drop table EMPLOYEE;

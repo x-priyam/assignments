@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    height: 100vh;
+    /* grid is temp layout */
+    display: grid;
+    grid-template-columns: 5fr 90fr 5fr;
+    grid-template-rows: min-content auto;
+    grid-template-areas:
+        "heading heading heading"
+        ". calc .";
+}
+
+#wrapper {
+    grid-area: calc;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content 10fr 80fr 10fr;
+        grid-template-areas:
+            "heading"
+            "."
+            "calc"
+            ".";
+    }
+}

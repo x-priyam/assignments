@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="https://api.iconify.design/noto-v1/pizza.svg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .required {
+            color: #f86f6f;
+        }
+
+        form {
+            margin: 2em 0;
+        }
+
+        fieldset {
+            font-size: 1.5rem;
+            padding: 1rem;
+            margin: 1em 0;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 1rem;
+            border-style: dashed;
+            color: #F2E7D5;
+        }
+
+        label,
+        input,
+        select,
+        textarea {
+            font-size: 1.5rem;
+            display: inline-block;
+            padding: 0.25rem;
+            border: none;
+            border-radius: 0.25em;
+            margin: 0.25rem;
+            color: #393E46;
+        }
+
+        label {
+            color: #F7F7F7;
+        }
+
+        #personal-info .horizontal {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #personal-info .horizontal div {
+            flex: 1;
+            min-width: 250px;
+            margin: 1em;
+        }
+
+        #survey div {
+            margin: 1em;
+        }
+
+        #survey textarea {
+            width: 80%;
+        }
+
+        #submit {
+            border: none;
+            padding: 1rem;
+            border-radius: 1rem;
+            background-color: #6D9886;
+            transition: all 0.5s linear;
+        }
+
+        #submit:hover {
+            background-color: #F2E7D5;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="header">
+        <h1>
+            Feedback Form
+        </h1>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="link.html">
+                        <img class="icon" src="https://api.iconify.design/bx/arrow-back.svg" alt="Go back">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.google.com/" target="_blank">
+                        <img class="icon" src="https://api.iconify.design/akar-icons/google-contained-fill.svg" alt="Google">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="main">
+        <h2>Please fill out the following form</h2>
+        Note: Items marked <span class="required">*</span> are mandatory.
+
+        <form action="#" method="get">
+            <fieldset id="personal-info">
+                <legend>Personal Information</legend>
+
+                <div class="horizontal">
+                    <div>
+                        <label for="name">Name: <span class="required">*</span></label>
+                        <input type="text" name="name" placeholder="e.g. Priyam" required>
+                    </div>
+
+                    <div>
+                        <label for="dob">Date of Birth: <span class="required">*</span></label>
+                        <input type="date" name="dob" id="dob" required>
+                    </div>
+
+                    <div>
+                        <label for="gender">Gender: <span class="required">*</span></label>
+                        <select name="gender" id="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other" selected>Others</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="horizontal">
+                    <div>
+                        <label for="email">Email: <span class="required">*</span></label>
+                        <input type="email" name="email" placeholder="e.g. cto@gmail.com" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset id="survey">
+                <legend>Tell us your thoughts</legend>
+
+                <div>
+                    <label for="rating">
+                        On a scale of 1-10 (10 being the best), how would you rate the experience on our website?
+                    </label>
+                    <input type="number" name="rating" id="rating" min="0" max="10" value="5">
+                </div>
+
+                <div>
+                    <label for="new">
+                        Our dev is constantly working to improve the website. Following are some of the new features currently being considered. <br>
+                        Is there a feature you would like us to add? If yes, select from the following:
+                    </label>
+                    <br>
+                    <select name="new" id="new">
+                        <optgroup label="Design">
+                            <option value="animation">Animations</option>
+                            <option value="theme">Day/Night Themes</option>
+                        </optgroup>
+                        <optgroup label="Account">
+                            <option value="bookmark">Bookmark Articles</option>
+                            <option value="PP">Profile Pictures</option>
+                        </optgroup>
+                        <option value="speed">Improve Load Times</option>
+                        <option value="na" selected>--N/A--</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="new_other">
+                        Want us to work on some other feature? <br>
+                        Facing an issue with the website? <br>
+                        Just want to appreciate our work? <br>
+                    </label>
+                    <br>
+                    <textarea name="new_other" id="new_other" cols="30" rows="10" placeholder="Leave a comment right here"></textarea>
+                </div>
+            </fieldset>
+            <div class="center">
+                <input type="submit" id="submit" value="Submit Form">
+            </div>
+        </form>
+    </section>
+
+    <section id="footer">
+        <p>
+            Made by: <br>
+            Priyam <br>
+            MCA, MUJ <br>
+            221020039.
+        </p>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+main .image-wrapper {
+  width: 50vw;
+  margin: 5vw;
+}
+
+main p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  main .image-wrapper {
+    width: 12.5vw;
+    margin: 2vw;
+  }
+}

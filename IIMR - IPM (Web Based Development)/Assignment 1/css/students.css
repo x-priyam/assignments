@@ -1,0 +1,72 @@
+.biography {
+  padding: 0.5vw 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.biography .bio {
+  order: 2;
+  background-color: var(--accent-1);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65vw;
+  padding: 10vw;
+}
+
+.biography .image-wrapper {
+  order: 1;
+  width: 55vw;
+  margin: 7.5vw;
+}
+
+.biography .image-wrapper img {
+  border-radius: 50%;
+}
+
+blockquote {
+  text-align: center;
+  font-style: italic;
+}
+
+blockquote .source {
+  font-style: normal;
+  letter-spacing: 2px;
+  opacity: 0.7;
+}
+
+.sub-heading {
+  font-size: 2em;
+}
+
+dt {
+  font-size: 1.75em;
+  padding: 0.5em;
+  padding-bottom: 0;
+}
+
+dd {
+  padding-top: 0;
+  padding-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px) {
+  .biography {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .biography .image-wrapper {
+    width: 30vw;
+    margin: 2vw;
+  }
+  
+  .biography .bio {
+    order: 0;
+    width: 70vw;
+    margin: 1vw 2vw;
+    padding: 3vw 10vw;
+  }
+}

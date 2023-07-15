@@ -1,0 +1,85 @@
+main {
+  padding: 0 5vw;
+}
+
+.biography {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-heading {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.bio-heading h1 {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+}
+
+.bio-heading h3 {
+  font-size: clamp(1rem, 5vw, 2rem);
+  color: var(--accent-3);
+  line-height: 0.3rem;
+}
+
+.bio-para {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bio-para p {
+  font-size: clamp(0.7em, 2vw, 0.9em);
+  opacity: 0.7;
+}
+
+.bio-divider {
+  border: none;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+.vid-heading h1 {
+  font-size: clamp(3rem, 5vw, 4rem);
+  line-height: 1em;
+}
+
+.vid-heading p {
+  font-size: 0.9em;
+  opacity: 0.7;
+}
+
+.vid-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vid-wrapper iframe {
+  width: 60vw;
+  aspect-ratio: 16/9;
+  border-radius: 1em;
+  border: 10px solid var(--accent-3);
+}
+
+@media screen and (min-width: 768px) {
+  .biography {
+    height: 100vh;
+  }
+
+  .bio-divider {
+    border: none;
+    border-top: 2px solid var(--accent-3);
+    width: 100%;
+  }
+}

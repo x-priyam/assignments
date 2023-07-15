@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@font-face {
+    font-family: "Mr Robot";
+    src: url("./../font/mr-robot.ttf");
+}
+
+:root {
+    --background-color: #060930;
+    --primary-color: #333456;
+    --secondary-color: #595B83;
+    --accent-color: #F4ABC4;
+    --animation-time: 1000ms;
+}
+
+body {
+    font-family: Poppins, Arial, sans-serif;
+}
+
+header h1 {
+    font-family: "Mr Robot";
+}

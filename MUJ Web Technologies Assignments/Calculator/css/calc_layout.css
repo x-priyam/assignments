@@ -1,0 +1,135 @@
+#wrapper {
+    padding: 1em;
+    display: grid;
+    grid-template-rows: 3fr 7fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "screen"
+        "buttons";
+    gap: 1em;
+
+}
+
+#screen {
+    grid-area: screen;
+    display: grid;
+    grid-template-columns: 2fr 8fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        ". input1"
+        "operand input2"
+        "output output";
+}
+
+#input1 {
+    grid-area: input1;
+}
+
+#input2 {
+    grid-area: input2;
+}
+
+#operand {
+    grid-area: operand;
+}
+
+#output {
+    grid-area: output;
+}
+
+#buttons {
+    grid-area: buttons;
+    display: grid;
+    grid-template-areas:
+        "one two three backspace"
+        "four five six divide"
+        "seven eight nine substract"
+        "dec zero multiply add"
+        "equal equal equal equal";
+    user-select: none;
+}
+
+#zero {
+    grid-area: zero;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#dec {
+    grid-area: dec;
+}
+
+#add {
+    grid-area: add;
+}
+
+#substract {
+    grid-area: substract;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#backspace {
+    grid-area: backspace;
+}
+
+#equal {
+    grid-area: equal;
+}
+
+@media screen and (min-width: 768px) {
+    #wrapper {
+        grid-template-columns: 7fr 3fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "buttons screen";
+    }
+
+    #buttons {
+        grid-template-areas:
+            "one two three backspace equal"
+            "four five six divide equal"
+            "seven eight nine substract equal"
+            "dec zero multiply add equal";
+    }
+}
