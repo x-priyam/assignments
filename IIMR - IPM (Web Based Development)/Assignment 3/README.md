@@ -1,5 +1,7 @@
 # Assignment 3
 
+_Link:_ https://xpsybit.github.io/Assignments/IIMR%20-%20IPM%20(Web%20Based%20Development)/Assignment%203/
+
 #### Web Development (Term 7)
 
 Website created for the third assignment for WBD-1 course (IPM, IIMR)
