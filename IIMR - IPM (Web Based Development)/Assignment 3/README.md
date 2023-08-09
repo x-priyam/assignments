@@ -1,6 +1,6 @@
 # Assignment 3
 
-_Link:_ https://xpsybit.github.io/Assignments/IIMR%20-%20IPM%20(Web%20Based%20Development)/Assignment%203/
+_Link:_ https://x-priyam.github.io/Assignments/IIMR%20-%20IPM%20(Web%20Based%20Development)/Assignment%203/
 
 #### Web Development (Term 7)
 
@@ -27,4 +27,4 @@ This is a submission for Group-17
 - Parth Mankad _(IPM01117)_
 - Parth Rastogi _(IPM01118)_
 - Pratham Chaudhary _(IPM01119)_
-- Priyam _(IPM01121)_ [@xPsyBit](https://github.com/xPsyBit)
+- Priyam _(IPM01121)_ [@x-priyam](https://github.com/x-priyam)

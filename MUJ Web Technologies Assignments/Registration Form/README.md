@@ -1,6 +1,6 @@
 # Registration Form
 
-_Link:_ https://xpsybit.github.io/Assignments/MUJ%20Web%20Technologies%20Assignments/Registration%20Form/
+_Link:_ https://x-priyam.github.io/Assignments/MUJ%20Web%20Technologies%20Assignments/Registration%20Form/
 
 A single page web application.
 
