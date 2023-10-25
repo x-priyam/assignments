@@ -1,6 +1,6 @@
 # Calculator
 
-_Link:_ https://x-priyam.github.io/Assignments/MUJ%20Web%20Technologies%20Assignments/Calculator/
+_Link:_ https://x-priyam.github.io/assignments/muj-web-projects/calculator/
 
 A web project made as an assignment.
 

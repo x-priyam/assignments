@@ -1,6 +1,6 @@
 # Assignment 1
 
-_Link:_ https://x-priyam.github.io/Assignments/IIMR%20-%20IPM%20(Web%20Based%20Development)/Assignment%201/
+_Link:_ https://x-priyam.github.io/assignments/iimr-web-dev/assignment-1/
 
 #### Web Development (Term 7)
 
